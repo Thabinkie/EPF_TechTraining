@@ -7,6 +7,7 @@ def largestPrimeFactor(n):
             n=n/i
         else:
             i=i+1
+            
     if prime_factor<n:
          prime_factor=n
     return prime_factor
