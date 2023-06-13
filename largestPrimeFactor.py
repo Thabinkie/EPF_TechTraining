@@ -1,12 +1,9 @@
-def largestPrimeFactor(n):
-    
-    i=2
-    while i*i <=n:
-        if n % i == 0:
-           
-            n//=i
+def findLargePrime(number):
+    index=2
+    while index*index<number:
+        if number%index:
+            index=index+1
         else:
-            i=i+1
-    
-    return n
-print(largestPrimeFactor(600851475143))
+            number=number/index
+    return number
+print(int(findLargePrime(13195)))
